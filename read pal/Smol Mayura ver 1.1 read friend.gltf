@@ -11,24 +11,13 @@
         {
             "name" : "Scene",
             "nodes" : [
-                0,
-                1
+                0
             ]
         }
     ],
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "outline",
-            "rotation" : [
-                0,
-                -0.3330433666706085,
-                0,
-                0.9429115056991577
-            ]
-        },
-        {
-            "mesh" : 1,
             "name" : "Smol Mayura",
             "rotation" : [
                 0,
@@ -56,7 +45,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Circle.002",
+            "name" : "Circle.011",
             "primitives" : [
                 {
                     "attributes" : {
@@ -65,20 +54,6 @@
                         "TEXCOORD_0" : 2
                     },
                     "indices" : 3,
-                    "material" : 0
-                }
-            ]
-        },
-        {
-            "name" : "Circle.011",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 4,
-                        "NORMAL" : 5,
-                        "TEXCOORD_0" : 6
-                    },
-                    "indices" : 7,
                     "material" : 0
                 }
             ]
@@ -101,119 +76,61 @@
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 30465,
+            "count" : 68611,
             "max" : [
-                1.220371127128601,
-                3.902582883834839,
-                1.4841276407241821
+                1.222928524017334,
+                3.9025826454162598,
+                1.4882290363311768
             ],
             "min" : [
-                -1.325143575668335,
-                -0.00936055462807417,
-                -1.1574523448944092
+                -1.3251382112503052,
+                -0.010559311136603355,
+                -1.1574524641036987
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 30465,
+            "count" : 68611,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 30465,
+            "count" : 68611,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
-            "componentType" : 5123,
-            "count" : 165594,
-            "type" : "SCALAR"
-        },
-        {
-            "bufferView" : 4,
-            "componentType" : 5126,
-            "count" : 38273,
-            "max" : [
-                1.2126994132995605,
-                3.886068105697632,
-                1.4713249206542969
-            ],
-            "min" : [
-                -1.3063616752624512,
-                0.006335598882287741,
-                -1.137559413909912
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "bufferView" : 5,
-            "componentType" : 5126,
-            "count" : 38273,
-            "type" : "VEC3"
-        },
-        {
-            "bufferView" : 6,
-            "componentType" : 5126,
-            "count" : 38273,
-            "type" : "VEC2"
-        },
-        {
-            "bufferView" : 7,
-            "componentType" : 5123,
-            "count" : 174366,
+            "componentType" : 5125,
+            "count" : 339960,
             "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 365580,
+            "byteLength" : 823332,
             "byteOffset" : 0,
             "target" : 34962
         },
         {
             "buffer" : 0,
-            "byteLength" : 365580,
-            "byteOffset" : 365580,
+            "byteLength" : 823332,
+            "byteOffset" : 823332,
             "target" : 34962
         },
         {
             "buffer" : 0,
-            "byteLength" : 243720,
-            "byteOffset" : 731160,
+            "byteLength" : 548888,
+            "byteOffset" : 1646664,
             "target" : 34962
         },
         {
             "buffer" : 0,
-            "byteLength" : 331188,
-            "byteOffset" : 974880,
-            "target" : 34963
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 459276,
-            "byteOffset" : 1306068,
-            "target" : 34962
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 459276,
-            "byteOffset" : 1765344,
-            "target" : 34962
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 306184,
-            "byteOffset" : 2224620,
-            "target" : 34962
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 348732,
-            "byteOffset" : 2530804,
+            "byteLength" : 1359840,
+            "byteOffset" : 2195552,
             "target" : 34963
         }
     ],
@@ -225,7 +142,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 2879536,
+            "byteLength" : 3555392,
             "uri" : "Smol Mayura ver 1.1 read friend.bin"
         }
     ]
