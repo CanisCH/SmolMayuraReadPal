@@ -5,7 +5,7 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-
+<!--
 	  <audio src="test.mp3" id="myAudio"></audio>
 	  <button onClick="playMyAudio()">Play Audio</button>
 		<script>
@@ -13,7 +13,7 @@
 		document.getElementById("myAudio").play();
 		}
 		</script>
-
+-->
     <a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF:0.001; filterBeta: 0.001" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
 	<!-- <img id="card" src="Canu friend.jpg" /> -->
@@ -22,7 +22,8 @@
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-
+	    
+      <a-entity cursor position="0 0 -5"></a-entity>
       <a-entity mindar-image-target="targetIndex: 0" sound="src: #ganbare; on: click">
         <!-- <a-plane src="#card" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane> -->
         <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.35 0.35 0.35" src="#avatarModel"
