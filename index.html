@@ -7,6 +7,7 @@
     .Div1 {border: 2px outset grey; background-color: white; text-align: center;}
     </style>
     <script>
+	<audio src="test.mp3" id="myAudio"></audio>
 	function playMyAudio(){
 	document.getElementById("myAudio").play();
 	}
@@ -24,11 +25,12 @@
     </script>
   </head>
   <body>
+<!--
 	<div class="Div1"
-	  <audio src="test.mp3" id="myAudio"></audio>
+
 	  <button onClick="playMyAudio()">Play Audio</button>
 	</div>
-
+-->
     <a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF:0.001; filterBeta: 0.001" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
 	<!-- <img id="card" src="Canu friend.jpg" /> -->
