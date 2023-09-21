@@ -5,6 +5,13 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
+	  <audio src="test.mp3" id="myAudio"></audio>
+	  <button onClick="playMyAudio()">Play Audio</button>
+		<script>
+		function playMyAudio(){
+		document.getElementById("myAudio").play();
+		}
+		</script>
     <a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF:0.001; filterBeta: 0.001" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
 	<!-- <img id="card" src="Canu friend.jpg" /> -->
@@ -24,12 +31,5 @@
 	  <a-entity light="type: ambient; color: #BBB"></a-entity>
     </a-entity>
     </a-scene>
-	  <audio src="test.mp3" id="myAudio"></audio>
-	  <button onClick="playMyAudio()">Play Audio</button>
-		<script>
-		function playMyAudio(){
-		document.getElementById("myAudio").play();
-		}
-		</script>
   </body>
 </html>
