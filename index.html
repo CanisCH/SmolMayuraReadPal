@@ -3,9 +3,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+    <style>
+    .Div1 {border: 2px outset grey; background-color: white; text-align: center;}
+    </style>
   </head>
   <body>
-
+	<div class="Div1"
 	  <audio src="test.mp3" id="myAudio"></audio>
 	  <button onClick="playMyAudio()">Play Audio</button>
 		<script>
@@ -13,6 +16,7 @@
 		document.getElementById("myAudio").play();
 		}
 		</script>
+	</div>
 
     <a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF:0.001; filterBeta: 0.001" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
