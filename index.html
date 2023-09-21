@@ -24,5 +24,12 @@
 	  <a-entity light="type: ambient; color: #BBB"></a-entity>
     </a-entity>
     </a-scene>
+	  <audio src="test.mp3" id="myAudio"></audio>
+	  <button onClick="playMyAudio()">Play Audio</button>
+		<script>
+		function playMyAudio(){
+		document.getElementById("myAudio").play();
+		}
+		</script>
   </body>
 </html>
