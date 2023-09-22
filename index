@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script>
+            <audio src="test.mp3" id="myAudio"></audio>
+            function playMyAudio(){
+            document.getElementById("myAudio").play();
+            }
+        </script>
+    </head>
+    <body>
+        <button onClick="playMyAudio()">Play Audio</button>
+        <iframe src="AR.html" height="1920" width="1080" title="Iframe Example" style="border:none;"></iframe>
+    </body>
+</html>
+    
