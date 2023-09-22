@@ -1,17 +1,31 @@
 <html>
     <head>
-
+	<style>
+		.button {
+			border: none;
+			color: white;
+			padding: 6px 12px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 40px;
+			margin: 4px 4px;
+			cursor: pointer;
+			background-color: #4CAF50;
+			}
+		<!-- .button1 {background-color: #4CAF50;} /* Green */
+		.button2 {background-color: #008CBA;} /* Blue */ -->
+</style>
     </head>
     <body>
         <audio src="test.mp3" id="myAudio"></audio>
-        <button onClick="playMyAudio()">Play Audio</button>
+        <button class="button" onClick="playMyAudio()">Play Audio</button>
         <script>
-			function playMyAudio(){
-			document.getElementById("myAudio").play();
-			}
-		</script>
-        <button onClick="playMyAudio()">Play Audio</button>
-        <iframe src="AR.html" height="960" width="1920" title="Iframe Example" style="border:none;"></iframe>
+		function playMyAudio(){
+		document.getElementById("myAudio").play();
+		}
+	</script>
+        <iframe src="AR.html" height="1860" width="1080" title="Iframe Example" style="border:none;"></iframe>
     </body>
 </html>
     
