@@ -6,11 +6,12 @@
 		<script src="js/aframe-extras.js"></script>
 	</head>
 	<body>
-		<p>2</p>
+		<p>2.1</p>
 		<a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF:0.001; filterBeta: 0.001" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
 			<a-assets>
 				<!-- <img id="card" src="Canu friend.jpg" /> -->
 				<a-asset-item id="avatarModel" src="read pal/Smol Mayura ver 1.1 read friend.gltf"></a-asset-item>
+				<a-asset-item id="text1" src="read pal/text.gltf"></a-asset-item>
 				<!-- <audio id="ganbare" src="test.mp3" preload="auto"></audio> -->
 			</a-assets>
 			<a-camera position="0 0 0" look-controls="enabled: false"></a-camera> 
@@ -20,6 +21,7 @@
 				animation-mixer="clip: wink" 
 				<!--animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate; enabled: false"-->
 				>
+				<a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.35 0.35 0.35" src="#text1">
 				<a-light type="directional" position="0 0 0" rotation="0 0 0" target="#directionaltarget">
 					<a-entity id="directionaltarget" position="0 -0.5 -1"></a-entity>
 				</a-light>
