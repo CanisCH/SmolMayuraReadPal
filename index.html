@@ -1,61 +1,27 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
-    <style>
-    .Div1 {border: 2px outset grey; background-color: white; text-align: center;}
-    </style>
-    <script>
-	<audio src="test.mp3" id="myAudio"></audio>
-	function playMyAudio(){
-	document.getElementById("myAudio").play();
-	}
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-	const sceneEl = document.querySelector('a-scene');
-	let arSystem;
-	sceneEl.addEventListener('loaded', function () {
-	  arSystem = sceneEl.systems["mindar-image-system"];
-	});
-	const examplePlane = document.querySelector('#example-plane');
-	examplePlane.addEventListener("click", event => {playMyAudio();
-      })
-    </script>
-  </head>
-  <body>
-<!--
-	<div class="Div1"
-
-	  <button onClick="playMyAudio()">Play Audio</button>
-	</div>
--->
-    <a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF:0.001; filterBeta: 0.001" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-      <a-assets>
-	<!-- <img id="card" src="Canu friend.jpg" /> -->
-	<a-asset-item id="avatarModel" src="read pal/Smol Mayura ver 1.1 read friend.gltf"></a-asset-item>
-	<audio id="ganbare" src="test.mp3" preload="auto"></audio>
-      </a-assets>
-
-      <!-- <a-camera position="0 0 0" look-controls="enabled: false"></a-camera> -->
-      <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
-	    
-<!--      <a-entity cursor position="0 0 -5"></a-entity> 
-      <a-entity id="elmo" geometry="primitive: box" 
-          sound="src: #ganbare; on: click"></a-entity>  -->
-      <a-entity mindar-image-target="targetIndex: 0">
-        <!-- <a-plane src="#card" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane> -->
-        <a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.35 0.35 0.35" src="#avatarModel" 
-          animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate; enabled: false"
-        >
-      <a-plane id="example-plane" class="clickable" color="blue" opacity="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-	    <a-light type="directional" position="0 0 0" rotation="0 0 0" target="#directionaltarget">
-  		  <a-entity id="directionaltarget" position="0 -0.5 -1"></a-entity>
-	    </a-light>
-	  <a-entity light="type: ambient; color: #BBB"></a-entity>
-    </a-entity>
-    </a-scene>
-
-  </body>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+	</head>
+	<body>
+		<a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF:0.001; filterBeta: 0.001" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+			<a-assets>
+				<!-- <img id="card" src="Canu friend.jpg" /> -->
+				<a-asset-item id="avatarModel" src="read pal/Smol Mayura ver 1.1 read friend.gltf"></a-asset-item>
+				<!-- <audio id="ganbare" src="test.mp3" preload="auto"></audio> -->
+			</a-assets>
+			<a-camera position="0 0 0" look-controls="enabled: false"></a-camera> 
+			<a-entity mindar-image-target="targetIndex: 0">
+				<!-- <a-plane src="#card" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane> -->
+				<a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.35 0.35 0.35" src="#avatarModel" 
+				animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate; enabled: false"
+				>
+				<a-light type="directional" position="0 0 0" rotation="0 0 0" target="#directionaltarget">
+					<a-entity id="directionaltarget" position="0 -0.5 -1"></a-entity>
+				</a-light>
+				<a-entity light="type: ambient; color: #BBB"></a-entity>
+			</a-entity>
+		</a-scene>
+	</body>
 </html>
