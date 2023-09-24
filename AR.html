@@ -6,7 +6,7 @@
 		<script src="js/aframe-extras.min.js"></script>
 	</head>
 	<body>
-		<p>2.18</p>
+		<p>2.19</p>
 		<p>Powered by MindAR</p>
 		<a-scene mindar-image="imageTargetSrc: targets s6.mind; filterMinCF:0.001; filterBeta: 0.001" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
 			<a-assets>
@@ -15,9 +15,9 @@
 			<a-camera position="0 0 0" look-controls="enabled: false"></a-camera> 
 			<a-entity mindar-image-target="targetIndex: 0">
 				<!-- <a-plane src="#card" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane> -->
-				<a-entity rotation="90 0 0 " position="0 0 0" scale="0.35 0.35 0.35" gltf-model="#avatarModel" 
+				<a-entity rotation="90 0 0 " position="0 0 0" scale="0.3 0.3 0.3" gltf-model="#avatarModel" 
 				animation-mixer="clip: *;" ></a-entity>
-				<a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.35 0.35 0.35" src="read pal/text.gltf"></a-gltf-model>
+				<a-gltf-model rotation="90 0 0 " position="0 0 0" scale="0.3 0.3 0.3" src="read pal/text.gltf"></a-gltf-model>
 				<a-light type="directional" position="0 0 0" rotation="90 0 0" target="#directionaltarget" color="#FFF" intensity="0.6">
 					<a-entity id="directionaltarget" position="0 -0.5 -1"></a-entity>
 				</a-light>
